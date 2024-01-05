@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="uk_UA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/css/home.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a href="" class="logo"
+          ><img src="src/img/header/logo.svg" alt="logo" class="logo__img"
+        /></a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link">Студія</a>
+            </li>
+            <li class="nav__item">
+              <a href="src/pages/portfolio.html" class="nav__link">Портфоліо</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link"></a
+            >info@devstudio.com
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+38 096 111 11 11" class="contacts__link"></a>+38 096
+            111 11 11
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main-page">
+      <section class="hero">
+        <div class="container hero__container">
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="hero__button" data-modal-open>Замовити послугу</button>
+        </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="backdrop__modal modal">
+            <button class="modal__close" data-modal-close>
+              <p class="close__text">X</p>
+            </button>
+            <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
+            <div class="modal__container">
+              <p class="modal__text">Ім'я</p>
+              <input type="text" class="modal__write" />
+              <img
+                src="img/person-black-18.svg"
+                alt="person"
+                class="modal_img"
+              />
+            </div>
+            <div class="modal__container">
+              <p class="modal__text">Телефон</p>
+              <input type="text" class="modal__write" />
+              <img
+                src="img/phone-black-18.svg"
+                alt="telephone"
+                class="modal_img"
+              />
+            </div>
+            <div class="modal__container">
+              <p class="modal__text">Пошта</p>
+              <input type="text" class="modal__write" />
+              <img src="img/email-black-18.svg" alt="email" class="modal_img" />
+            </div>
+            <div class="modal__container">
+              <p class="modal__write">Коментар</p>
+              <input
+                type="text"
+                placeholder="Введіть текст"
+                class="modal__write coment"
+              />
+            </div>
+            <div class="modal__container">
+              <div class="modal__wrapper">
+                <input type="checkbox" class="modal__checkbox" />
+                <label for="modal__checkbox">
+                  Погоджуюся з розсилкою та приймаю
+                  <a class="checkbox__link">Умови договору</a></label
+                >
+              </div>
+              <button class="modal__button">Відправити</button>
+            </div>
+          </div>
+        </div>
+        <script src="modal.js"></script>
+      </section>
+      <section class="advantages">
+        <div class="container advantages__container">
+          <ul class="advantages__list">
+            <li class="advantages__item advantage">
+              <div class="advantages__photo">
+                <svg class="advantage__icon">
+                  <use href="/img/icones.svg#antena"></use>
+                </svg>
+              </div>
+              <h2 class="advantage__title">УВАГА ДО ДЕТАЛЕЙ</h2>
+              <p class="advantage__text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="advantages__item advantage">
+              <div class="advantages__photo">
+                <svg class="advantage__icon">
+                  <use href="/img/icones.svg#clock"></use>
+                </svg>
+              </div>
+              <h2 class="advantage__title">ПУНКТУАЛЬНІСТЬ</h2>
+              <p class="advantage__text">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="advantages__item advantage">
+              <div class="advantages__photo">
+                <svg class="advantage__icon">
+                  <use href="/img/icones.svg#diagrama"></use>
+                </svg>
+              </div>
+              <h2 class="advantage__title">ПЛАНУВАННЯ</h2>
+              <p class="advantage__text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="advantages__item advantage">
+              <div class="advantages__photo">
+                <svg class="advantage__icon">
+                  <use href="/img/icones.svg#astronaut"></use>
+                </svg>
+              </div>
+              <h2 class="advantage__title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
+              <p class="advantage__text">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="cases">
+        <div class="container cases__container">
+          <div class="cases__content">
+            <h2 class="cases__title">Чим ми займаємося</h2>
+            <div class="cases__item case">
+              <img
+                class="cases__img"
+                src="src/img/case/descktop.jpg"
+                alt="Desktop programs"
+              />
+              <h3 class="case__title">Десктопні додатки</h3>
+            </div>
+            <div class="cases__item case">
+              <img
+                class="cases__img"
+                src="src/img/case/mobile.jpg"
+                alt="Mobile programs"
+              />
+              <h3 class="case__title">Мобільні додатки</h3>
+            </div>
+            <div class="cases__item case">
+              <img
+                class="cases__img"
+                src="src/img/case/design.jpg"
+                alt="Design"
+              />
+              <h3 class="case__title">Дизайнерські рішення</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="team">
+        <div class="container team__container">
+          <h2 class="team__title">Наша команда</h2>
+          <div class="team__content">
+            <article class="employee">
+              <div class="employee__photo">
+                <img
+                  src="src/img/team/igor.jpg"
+                  alt="Фото Ігор Дем'яненко"
+                  class="employee__img"
+                />
+              </div>
+              <h3 class="employee__name">Ігор Дем'яненко</h3>
+              <p class="employee__position">Product Designer</p>
+            </article>
+            <article class="employee">
+              <div class="employee__photo">
+                <img
+                  src="src/img/team/olga.jpg"
+                  alt="Фото Ольга Рєпіна"
+                  class="employee__img"
+                />
+              </div>
+              <h3 class="employee__name">Ольга Рєпіна</h3>
+              <p class="employee__position">Frontend Developer</p>
+            </article>
+            <article class="employee">
+              <div class="employee__photo">
+                <img
+                  src="src/img/team/mikola.jpg"
+                  alt="Фото Микола Тарасов"
+                  class="employee__img"
+                />
+              </div>
+              <h3 class="employee__name">Микола Тарасов</h3>
+              <p class="employee__position">Marketing</p>
+            </article>
+            <article class="employee">
+              <div class="employee__photo">
+                <img
+                  src="src/img/team/mihailo.jpg"
+                  alt="Фото Михайло Єрмаков"
+                  class="employee__img"
+                />
+              </div>
+              <h3 class="employee__name">Михайло Єрмаков</h3>
+              <p class="employee__position">UI Designer</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer_container">
+        <a href="" class="logo"
+          ><img src="src/img/footer/logo.svg" alt="Логотип" class="footer_img"
+        /></a>
+        <ul class="footer__contacts list-contacts"></ul>
+        <li class="footer_logo footer_item">
+          <address>м. Київ, пр-т Лесі Українки, 26</address>
+        </li>
+        <li class="footer_logo footer_item">
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="footer_logo footer_item">
+          <a href="tel:info@devstudio.com">+38 096 111 11 11</a>
+        </li>
+      </div>
+    </footer>
+  </body>
+</html>
